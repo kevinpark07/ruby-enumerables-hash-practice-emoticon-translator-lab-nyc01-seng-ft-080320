@@ -40,4 +40,5 @@ def get_japanese_emoticon(path, emoticon)
       "Sorry, that emoticon was not found"
   end
 end
+japanese_emoticon
 end
