@@ -23,10 +23,18 @@ def get_english_meaning(path, emoticon)
     else
       "Sorry, that emoticon was not found"
   end
-  binding.pry 
 end
 end
 
 def get_japanese_emoticon(path, emoticon)
-  #insert code
+  emoticon_hash = load_library(path)
+
+  emoticon_hash.each do |key, language|
+    if emoticon == emoticon_hash[key][:english]
+      emoticon_hash[key][:japanese]
+    else
+      "Sorry, that emoticon was not found"
+  end
+end
+binding.pry 
 end
