@@ -12,6 +12,7 @@ emoticons.each do |english_word, emoticon_set|
   emoticon_hash[english_word][:japanese] = emoticon_set.last
   end
   emoticon_hash
+  binding.pry
 end
 
 def get_english_meaning(path, emoticon)
